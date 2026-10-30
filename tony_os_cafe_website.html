@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#173d2c">
+<title>Tony O's Cafe | Good food, great value</title>
+<meta name="description" content="Visit Tony O's Cafe in Liverpool for hearty breakfasts, generous portions, friendly service and great value. Dine-in, takeaway and delivery.">
+<style>
+:root{--green:#173d2c;--green2:#24583f;--cream:#fbf6eb;--gold:#e8b75b;--ink:#20251f;--muted:#686e65;--white:#fffdf8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}a{color:inherit}.wrap{width:min(1120px,90%);margin:auto}
+header{background:var(--green);color:white;position:sticky;top:0;z-index:10;box-shadow:0 4px 20px #00000012}.nav{display:flex;align-items:center;justify-content:space-between;min-height:78px;gap:20px}.brand{font-weight:900;letter-spacing:-1px;font-size:1.35rem;text-decoration:none;line-height:1.05}.brand span{display:block;color:var(--gold);font-size:.68rem;letter-spacing:3px;text-transform:uppercase;margin-top:7px}.links{display:flex;gap:25px;align-items:center}.links a{text-decoration:none;font-weight:700;font-size:.92rem}.links a:hover{color:var(--gold)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#1b281e;text-decoration:none;font-weight:800;padding:13px 19px;border-radius:6px;border:0;transition:transform .2s,background .2s}.nav-cta:hover,.btn:hover{transform:translateY(-2px);background:#f2c974}.menu-toggle{display:none;background:none;border:1px solid #ffffff70;color:white;border-radius:5px;padding:8px 12px;font-size:1.1rem}
+.hero{background:linear-gradient(90deg,rgba(13,40,27,.92) 0%,rgba(13,40,27,.72) 48%,rgba(13,40,27,.14) 100%),url('https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?auto=format&fit=crop&w=2000&q=85') center/cover;min-height:600px;display:flex;align-items:center;color:white}.hero-content{max-width:660px;padding:80px 0}.eyebrow{text-transform:uppercase;letter-spacing:3px;color:var(--gold);font-size:.8rem;font-weight:800}.hero h1{font-size:clamp(3rem,7vw,5.6rem);line-height:.99;letter-spacing:-3px;margin:18px 0}.hero h1 em{font-style:normal;color:var(--gold)}.hero p{font-size:1.15rem;max-width:540px;color:#f3f3e9}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}.btn-outline{background:transparent;border:1px solid #ffffffa8;color:white}.btn-outline:hover{background:#ffffff15}.rating{display:flex;align-items:center;gap:12px;margin-top:32px;font-weight:700}.stars{color:var(--gold);letter-spacing:3px;font-size:1.2rem}.rating small{display:block;color:#e3e8df;font-weight:400}
+.quickfacts{background:var(--white);box-shadow:0 8px 28px #172f2010;position:relative;margin-top:-35px;border-radius:12px;display:grid;grid-template-columns:repeat(4,1fr);padding:24px;gap:15px}.fact{padding:4px 18px;border-right:1px solid #e9e3d7}.fact:last-child{border:0}.fact b{display:block;font-size:1rem}.fact span{color:var(--muted);font-size:.88rem}.fact-icon{font-size:1.35rem;margin-bottom:4px}
+section{padding:88px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 42px}.section-head h2{font-size:clamp(2.1rem,4vw,3.3rem);line-height:1.1;letter-spacing:-1.5px;margin:10px 0 15px}.section-head p{color:var(--muted);margin:0}.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.story-img{min-height:440px;border-radius:12px;background:url('https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=85') center/cover;position:relative}.img-note{position:absolute;right:-18px;bottom:24px;background:var(--gold);padding:17px 22px;border-radius:8px;font-weight:900;max-width:180px;line-height:1.25}.story-copy h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;letter-spacing:-1px;margin:10px 0 20px}.story-copy p{color:var(--muted)}.tick-list{list-style:none;padding:0;margin:25px 0}.tick-list li{margin:12px 0;font-weight:700}.tick-list li:before{content:'✓';color:var(--green2);font-weight:900;margin-right:10px}
+.menu-section{background:#f0e8d9}.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.menu-card{background:var(--white);border-radius:10px;overflow:hidden;box-shadow:0 5px 20px #302a1a0b}.menu-card img{width:100%;height:210px;object-fit:cover;display:block}.menu-card-body{padding:23px}.menu-card h3{margin:0 0 8px;font-size:1.25rem}.menu-card p{margin:0;color:var(--muted);font-size:.94rem}.menu-note{text-align:center;color:var(--muted);margin:26px auto 0;max-width:720px;font-size:.9rem}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.review{background:var(--white);border:1px solid #eee5d7;border-radius:10px;padding:25px}.review .stars{font-size:1rem}.review p{color:#454b43}.review strong{display:block;margin-top:18px}.review small{color:var(--muted)}.review-summary{text-align:center;margin-top:35px}.review-summary b{font-size:1.7rem}.review-summary span{color:var(--muted)}
+.visit{background:var(--green);color:white}.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.visit h2{font-size:clamp(2.2rem,4vw,3.5rem);line-height:1.08;letter-spacing:-1.5px;margin:10px 0 18px}.visit p{color:#dce5dc}.contact-lines{margin:25px 0}.contact-lines div{margin:14px 0}.contact-lines b{display:block;color:var(--gold);font-size:.8rem;text-transform:uppercase;letter-spacing:1.5px}.contact-lines a{color:white;text-decoration:none}.map-card{background:#f8f2e5;border-radius:12px;padding:12px;color:var(--ink)}.map-placeholder{min-height:350px;border-radius:8px;background:linear-gradient(135deg,#e7e8d9,#d4dfce);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:25px;position:relative;overflow:hidden}
+.map-placeholder:before,.map-placeholder:after{content:'';position:absolute;background:#c2d2b8;opacity:.65;transform:rotate(-18deg);width:150%;height:22px;left:-20%;top:28%}
+.map-placeholder:after{transform:rotate(31deg);top:68%;height:16px;background:#f8f2e5}
+.map-pin,.map-place-name,.map-address,.map-directions{position:relative;z-index:1}
+.map-pin{font-size:2.5rem;margin-bottom:8px}.map-place-name{font-weight:900;letter-spacing:2px;font-size:1.1rem}.map-address{color:#515c4d;margin:5px 0 20px}.map-directions{box-shadow:0 4px 12px #173d2c20}.map-caption{padding:14px 8px 7px;display:flex;justify-content:space-between;align-items:center;gap:10px}.map-caption p{color:var(--muted);margin:0;font-size:.9rem}.map-caption a{white-space:nowrap}
+footer{background:#10291d;color:#dbe5dc;padding:27px 0}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.footer-row p{margin:0;font-size:.88rem}.footer-brand{font-weight:900;color:white}
+@media(max-width:760px){.links{display:none;position:absolute;left:0;right:0;top:78px;background:var(--green);padding:20px 5% 25px;flex-direction:column;align-items:stretch;gap:18px}.links.open{display:flex}.menu-toggle{display:block}.nav-cta{display:none}.hero{min-height:570px;background-position:58% center}.hero-content{padding:70px 0}.hero h1{letter-spacing:-2px}.quickfacts{grid-template-columns:1fr 1fr;padding:18px;margin-top:-25px}.fact{padding:10px;border-right:0;border-bottom:1px solid #e9e3d7}.fact:nth-child(odd){border-right:1px solid #e9e3d7}.fact:nth-last-child(-n+2){border-bottom:0}.story-grid,.visit-grid{grid-template-columns:1fr;gap:35px}.story-img{min-height:330px}.img-note{right:10px}.menu-grid,.review-grid{grid-template-columns:1fr}.menu-card img{height:230px}section{padding:65px 0}.map-caption{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">TONY O'S <span>CAFE · LIVERPOOL</span></a>
+    <nav class="links" id="navLinks" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#favourites">Our Favourites</a><a href="#reviews">Reviews</a><a href="#visit">Find Us</a>
+    </nav>
+    <a class="nav-cta" href="tel:01515486906">Call to order</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="wrap"><div class="hero-content">
+    <div class="eyebrow">Your local Liverpool cafe</div>
+    <h1>Good food.<br><em>Great value.</em></h1>
+    <p>Proper hearty breakfasts, generous portions and a warm welcome every time. Come hungry, leave happy.</p>
+    <div class="actions"><a class="btn" href="#visit">Come and see us ↗</a><a class="btn btn-outline" href="tel:01515486906">☎ 0151 548 6906</a></div>
+    <div class="rating"><span class="stars">★★★★★</span><span>4.8/5 <small>Based on 21 Google reviews</small></span></div>
+  </div></div>
+</section>
+<div class="wrap quickfacts">
+  <div class="fact"><div class="fact-icon">🍳</div><b>Hearty breakfasts</b><span>Big flavour, generous plates</span></div>
+  <div class="fact"><div class="fact-icon">😊</div><b>Friendly faces</b><span>A warm, welcoming team</span></div>
+  <div class="fact"><div class="fact-icon">£</div><b>Great value</b><span>Typically £1–£10 per person</span></div>
+  <div class="fact"><div class="fact-icon">🥡</div><b>Your way</b><span>Dine-in, takeaway & delivery</span></div>
+</div>
+<section id="about">
+  <div class="wrap story-grid">
+    <div class="story-img" role="img" aria-label="A freshly prepared cafe breakfast"><div class="img-note">Big portions.<br>Brilliant value.</div></div>
+    <div class="story-copy"><div class="eyebrow">Welcome to Tony O's</div><h2>Your neighbourhood spot for a proper feed.</h2>
+      <p>At Tony O's Cafe, good food and good people come first. Whether you're starting your morning with a full breakfast or grabbing something tasty on the go, expect generous portions, quick service and a friendly welcome.</p>
+      <ul class="tick-list"><li>Fresh, satisfying cafe favourites</li><li>Friendly service and a clean, relaxed atmosphere</li><li>Great value without compromising on quality</li></ul>
+      <a class="btn" href="#visit">Plan your visit</a>
+    </div>
+  </div>
+</section>
+<section class="menu-section" id="favourites">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Made for a good appetite</div><h2>Local favourites</h2><p>Whether it's breakfast time or you're after something filling, there's something to look forward to.</p></div>
+    <div class="menu-grid">
+      <article class="menu-card"><img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80" alt="A hearty breakfast plate" loading="lazy"><div class="menu-card-body"><h3>The Big Breakfast</h3><p>A hearty classic with generous portions—the kind of breakfast that keeps you going.</p></div></article>
+      <article class="menu-card"><img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80" alt="Freshly made toasted sandwich" loading="lazy"><div class="menu-card-body"><h3>Toasted & Tasty</h3><p>A satisfying bite for lunch or whenever you fancy something warm and delicious.</p></div></article>
+      <article class="menu-card"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" alt="A fresh and colourful food bowl" loading="lazy"><div class="menu-card-body"><h3>Protein Boxes</h3><p>A filling option for busy days, with plenty to enjoy in every box.</p></div></article>
+    </div>
+    <p class="menu-note">Menu photos are illustrative. Please call the cafe to confirm today's menu, prices, allergens and availability.</p>
+  </div>
+</section>
+<section id="reviews">
+  <div class="wrap"><div class="section-head"><div class="eyebrow">Kind words from customers</div><h2>Good food speaks for itself.</h2><p>Customers love the generous portions, great value and welcoming service at Tony O's.</p></div>
+    <div class="review-grid">
+      <article class="review"><div class="stars">★★★★★</div><p>“You will struggle to find this quality for this value anywhere else. Fast. Delicious. Staff are very welcoming and friendly.”</p><strong>Jack May</strong><small>Google review</small></article>
+      <article class="review"><div class="stars">★★★★★</div><p>“Gorgeous food & very clean! Fab owners and staff! Very friendly atmosphere! Best cafe about!”</p><strong>Cherelle Sloan</strong><small>Google review</small></article>
+      <article class="review"><div class="stars">★★★★★</div><p>“A large breakfast with extra beans and black pudding… it was amazing and fed two and a bit.”</p><strong>Catherine Ormesher</strong><small>Google review</small></article>
+    </div>
+    <div class="review-summary"><b>4.8/5 <span class="stars">★★★★★</span></b><br><span>Customer rating · 21 reviews</span></div>
+  </div>
+</section>
+<section class="visit" id="visit">
+  <div class="wrap visit-grid">
+    <div><div class="eyebrow">Pop in and say hello</div><h2>Great food is just around the corner.</h2><p>Find us in Liverpool for breakfast, lunch or a tasty takeaway.</p>
+      <div class="contact-lines">
+        <div><b>Address</b>2 Marl Rd, Liverpool L33 7UH</div>
+        <div><b>Phone</b><a href="tel:01515486906">0151 548 6906</a></div>
+        <div><b>Opening hours</b>Opening hours can change. Please call ahead to confirm.</div>
+        <div><b>Serving options</b>Dine-in · Takeaway · Delivery</div>
+      </div>
+      <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=2+Marl+Rd%2C+Liverpool+L33+7UH" target="_blank" rel="noopener">Get directions ↗</a>
+    </div>
+    <div class="map-card">
+      <div class="map-placeholder" role="img" aria-label="Map preview unavailable. Use the directions button to open the cafe location in Google Maps.">
+        <div class="map-pin">📍</div>
+        <div class="map-place-name">TONY O'S CAFE</div>
+        <div class="map-address">2 Marl Rd, Liverpool L33 7UH</div>
+        <a class="btn map-directions" href="https://www.google.com/maps/dir/?api=1&destination=2+Marl+Rd%2C+Liverpool+L33+7UH" target="_blank" rel="noopener">Get directions ↗</a>
+      </div>
+      <div class="map-caption"><div><b>Tony O's Cafe</b><p>2 Marl Rd, Liverpool L33 7UH</p></div><a href="https://www.google.com/maps/search/?api=1&query=Tony+O%27s+Cafe%2C+2+Marl+Rd%2C+Liverpool" target="_blank" rel="noopener">Open in Maps ↗</a></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap footer-row"><div class="footer-brand">TONY O'S CAFE</div><p>Good food. Great value. A warm welcome.</p><p>© <span id="year"></span> Tony O's Cafe</p></div></footer>
+<script>
+const toggle=document.getElementById('menuToggle'),links=document.getElementById('navLinks');
+toggle.addEventListener('click',()=>{const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close navigation':'Open navigation');toggle.textContent=open?'✕':'☰'});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
